@@ -1,7 +1,8 @@
-package p1.service;
+package p2.service;
 
 import org.springframework.stereotype.Service;
-import p1.Comment;
+import p2.Comment;
+import p2.ToLog;
 
 import java.util.logging.Logger;
 
@@ -10,9 +11,17 @@ public class CommentService {
 
     private Logger logger = Logger.getLogger(CommentService.class.getName());
 
-    public String publishComment(Comment comment){
+    public void publishComment(Comment comment){
         logger.info("Publish comment: " + comment.getText());
-        return "SUCCESS";
+    }
+
+    @ToLog
+    public void deleteComment(Comment comment){
+        logger.info("Deleting comment:" + comment.getText());
+    }
+
+    public void editComment(Comment comment){
+        logger.info("Editing comment:" + comment.getText());
     }
 
 }

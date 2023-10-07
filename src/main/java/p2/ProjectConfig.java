@@ -1,4 +1,4 @@
-package p1;
+package p2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
-@ComponentScan(basePackages = "p1")
+@ComponentScan(basePackages = "p2")
 @EnableAspectJAutoProxy
 public class ProjectConfig {
 

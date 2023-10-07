@@ -1,4 +1,4 @@
-package p2;
+package p3;
 
 public class Comment {
 

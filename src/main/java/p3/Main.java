@@ -1,7 +1,7 @@
-package p2;
+package p3;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import p2.service.CommentService;
+import p3.service.CommentService;
 
 import java.util.logging.Logger;
 
@@ -18,8 +18,6 @@ public class Main {
         comment.setAuthor("Alex");
 
         service.publishComment(comment);
-        service.deleteComment(comment);
-        service.editComment(comment);
 
 
     }

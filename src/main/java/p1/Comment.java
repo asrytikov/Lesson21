@@ -1,4 +1,4 @@
-package p5;
+package p1;
 
 public class Comment {
 
@@ -19,5 +19,13 @@ public class Comment {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "text='" + text + '\'' +
+                ", author='" + author + '\'' +
+                '}';
     }
 }
